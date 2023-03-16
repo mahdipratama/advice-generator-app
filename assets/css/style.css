@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -639,11 +643,6 @@ video {
   background-color: transparent;
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .p-\[1\.7rem\] {
   padding: 1.7rem;
 }
@@ -695,6 +694,10 @@ video {
   color: hsl(150 100% 66% / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .transition-shadow {
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -708,6 +711,15 @@ video {
   border-radius: 50%;
   border: 0.3rem solid hsl(218deg, 23%, 16%);
   border-top-color: hsl(150deg, 100%, 66%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader::before {
   animation: spin 1s linear infinite;
 }
 
