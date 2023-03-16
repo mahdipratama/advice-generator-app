@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- displays site properly based on user's device -->
@@ -19,8 +19,39 @@
 
     <title>Frontend Mentor | Advice generator app</title>
   </head>
-  <body>
-    <h1>Helo</h1>
+  <body
+    class="bg-drkBlue min-h-screen flex items-center justify-center font-manrope">
+    <main
+      class="relative bg-drkGrayBlue max-w-[33.7rem] p-[1.7rem] pb-[4rem] rounded-lg m-6">
+      <div
+        class="loader absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full flex justify-center items-center bg-transparent rounded-lg invisible"></div>
+      <div id="advice-container">
+        <h2
+          class="text-xs text-center text- uppercase font-extrabold text-neonGreen tracking-[0.3rem] mb-6">
+          Advice #<span id="advice-number">0</span>
+        </h2>
+        <p
+          id="advice-text"
+          class="text-center text-lightCyan text-[1.4rem] sm:text-q font-bold mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          magnam! Mollitia veniam modi ab. Delectus.
+        </p>
+        <picture>
+          <source
+            srcset="images/pattern-divider-mobile.svg"
+            media="(max-width: 400px)" />
+          <img
+            class="m-auto"
+            src="images/pattern-divider-desktop.svg"
+            alt="advice divider" />
+        </picture>
+        <button
+          id="advice-button"
+          class="absolute -bottom-7 right-2/4 translate-x-2/4 w-16 h-16 bg-neonGreen rounded-full flex justify-center items-center transition-shadow hover:shadow-btn">
+          <img src="images/icon-dice.svg" alt="dice icon" />
+        </button>
+      </div>
+    </main>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

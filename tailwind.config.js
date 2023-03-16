@@ -18,7 +18,15 @@ module.exports = {
 
       fontSize: {
         q: '28px',
-      }
+      },
+
+      spacing: {
+        center: ['0 auto'],
+      },
+
+      boxShadow: {
+        btn: '#52ffa8 0px 0px 25px 1px',
+      },
     },
   },
   plugins: [],
