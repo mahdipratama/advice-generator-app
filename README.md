@@ -1,5 +1,3 @@
-This is a solution to the [Advice generator app challenge on Frontend Mentor]. This challenge uses the Advice Slip API to generate random quotes of advice.
-
 # Frontend Mentor - Product preview card component solution
 
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.
